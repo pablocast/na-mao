@@ -40,3 +40,49 @@
             border-radius:1em;
             }
 
+.sliderWrapper {
+    position: absolute;
+    width: 1440px;
+    height: 562px;
+    left: 0px;
+    top: 71px;
+    background: #FFFFFF;
+}
+
+    .image {
+        position: absolute;
+        width: 1254px;
+        height: 467px;
+        left: 93px;
+        top: 119px;
+        background: #C4C4C4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 75px;
+        color: #FFFFFF
+    }
+
+    .arrowL {
+        position: absolute;
+        left: 26px;
+        top: 334px;
+        display: block;
+        border-top: 33px solid transparent;
+        border-bottom: 33px solid transparent;
+        border-right: 33px solid #C4C4C4;
+    }
+
+    .arrowR {
+        position: absolute;
+        left: 1413px;
+        top: 334px;
+        display: block;
+        border-top: 33px solid transparent;
+        border-bottom: 33px solid transparent;
+        border-left: 33px solid #C4C4C4;
+    }
