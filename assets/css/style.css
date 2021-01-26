@@ -54,7 +54,7 @@
         width: 1254px;
         height: 467px;
         left: 93px;
-        top: 119px;
+        top: 48px;
         background: #C4C4C4;
         display: flex;
         justify-content: center;
@@ -85,4 +85,53 @@
         border-top: 33px solid transparent;
         border-bottom: 33px solid transparent;
         border-left: 33px solid #C4C4C4;
+    }
+
+.sobreWrapper {
+    position: absolute;
+    width: 1440px;
+    height: 423px;
+    left: 0px;
+    top: 640px;
+    background: rgba(95, 111, 255, 0.76);
+}
+    .Rectangle {
+        position: absolute;
+        width: 8px;
+        height: 26px;
+        left: 80px;
+        top: 48px;
+        background: #FFFFFF;
+    }
+    
+    .Title {
+        position: absolute;
+        width: 64px;
+        height: 28px;
+        left: 98px;
+        top: 47px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+
+        color: #FFFFFF
+      
+    }
+
+    .Text {
+        position: absolute;
+        width: 1187px;
+        height: 189px;
+        left: 126px;
+        top: 121px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+
     }
