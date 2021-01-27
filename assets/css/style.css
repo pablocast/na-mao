@@ -5,47 +5,35 @@
     background: #FFFFFF;
 }
 
-.navBarWrapper {
+.navbar {
     width: 1440px;
     height: 61px;
     left: 0px;
-    top: 23px;
-    background: #FFFFFF;
+    top: 0px;
+    background: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-  
-  .topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .topbar li {
-    display: inline-block;
-    font-family: Roboto;
-    font-style: normal;
+
+.navbar-brand {
+    font-size: 18px !important;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
+    font-family: Roboto !important;
     color: #4B7EFF;
-  }
+}
+    .navbar-nav > li > a { 
+        display: inline-block;
+        font-family: Roboto !important;
+        font-style: normal;
+        font-size: 18px !important;
+        line-height: 21px;
+        color: #4B7EFF;
+    } 
 
-  .topbar li a {
-    padding: 14px 16px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    color: #4B7EFF;
-    text-decoration: none;
-  }
+    .navbar-nav > li{
+        padding-left:5px !important;
+        padding-right:5px !important;
+      }
 
-    .topbar li a:active {
-            color:white;
-            background-color: #4B7EFF;
-            border-radius:1em;
-            }
 
 .sliderWrapper {
     position: absolute;
@@ -56,43 +44,37 @@
     background: #FFFFFF;
 }
 
-    .image {
-        position: absolute;
-        width: 1254px;
-        height: 467px;
-        left: 93px;
-        top: 48px;
-        background: #C4C4C4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 64px;
-        line-height: 75px;
-        color: #FFFFFF
+    .carousel-inner{
+    height:500px
+    }
+    .carousel-inner .carousel-item img{
+    max-height:500px;
+    object-fit:contain;
     }
 
-    .arrowL {
-        position: absolute;
-        left: 26px;
-        top: 253px;
-        display: block;
-        border-top: 33px solid transparent;
-        border-bottom: 33px solid transparent;
-        border-right: 33px solid #C4C4C4;
+    .carousel-control-next-icon:after
+    {
+    content: '>';
+    font-size: 55px;
+    color: rgba(70,70,70,.25) ;
     }
 
-    .arrowR {
-        position: absolute;
-        left: 1413px;
-        top: 253px;
-        display: block;
-        border-top: 33px solid transparent;
-        border-bottom: 33px solid transparent;
-        border-left: 33px solid #C4C4C4;
+    .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color:rgba(70,70,70,.25) ;
     }
+
+    .carousel-indicators li {
+        position: relative;
+        top:30px;
+        background-color: #999 !important;
+        background-color: rgba(70,70,70,.25) !important;
+      }
+      
+    .carousel-indicators .active {
+        background-color: #444 !important;
+      }
 
 .sobreWrapper {
     position: absolute;
@@ -110,7 +92,7 @@
         top: 48px;
         background: #FFFFFF;
     }
-    
+
     .Title {
         position: absolute;
         width: 64px;
@@ -169,53 +151,25 @@
         color:  #4B7EFF; 
     }
 
-    .Nome {
-        position: absolute;
-        width: 601px;
-        height: 38px;
-        left: 93px;
-        top: 1238px;
-        background: #FFFFFF;
-        border: 1px solid #4B7EFF;
-        box-sizing: border-box;
-        border-radius: 5px;
-    }
+    form {
+            position: absolute;
+            left: 80px;
+            top: 1230px;
+            width: 90%;
+        }
 
-    .Email{
-        position: absolute;
-        width: 587px;
-        height: 38px;
-        left: 734px;
-        top: 1238px;
+        input,textarea {
+            background: #FFFFFF;
+            border: 1px solid #4B7EFF !important;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
 
-        background: #FFFFFF;
-        border: 1px solid #4B7EFF;
-        box-sizing: border-box;
-        border-radius: 5px;
-    }
+        ::placeholder {
+            color:  #4B7EFF !important;
+        }
 
-    .Mensagem {
-        position: absolute;
-        width: 1228px;
-        height: 160px;
-        left: 93px;
-        top: 1305px;
-
-        background: #FFFFFF;
-        border: 1px solid #4B7EFF;
-        box-sizing: border-box;
-        border-radius: 5px;
-    }
-
-        #text {
-                position:relative;
-                top:-20px;
-                right:-10px;
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 24px;
-                line-height: 28px;
-                color: rgba(75, 126, 255, 0.74);
-            }
-
+        .btn-primary { 
+            background-color: #4B7EFF !important;
+        }
+    
